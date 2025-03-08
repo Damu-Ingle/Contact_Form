@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/351fad2651.js" crossorigin="anonymous"></script>
+    <title>Borcelle Clinic</title>
+    <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container px-3">
+            <a class="navbar-brand logo" href="#"><img src="assets/Logo.png" alt="logo"></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center gap-4">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container px-4 pt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="pb-4">GET IN TOUCH</h1>
+                <h6><span class="fs-1 custom-color">Convey Your</span><br> <span class="fs-1">Ideas to Us</span></h6>
+                <p>Contact us for questions, technical <br>
+                    assistance, or collaboration opportunities <br>
+                    via the contact information provided.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3"> <span><i class="fa-solid fa-phone text-secondary"></i></span> +123-456-7890</li>
+                    <li class="mb-3"> <span><i class="fa-solid fa-envelope text-secondary"></i></span>
+                        hello@reallygreatsite.com</li>
+                    <li class="mb-3"> <span><i class="fa-solid fa-location-dot text-secondary"></i></span> 123 Anywhere
+                        ST, Any City, 12345</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6">
+                <form id="contactForm" class="p-4">
+                    <div  class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                        <small class="text-danger" id="nameError"></small>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                            <small class="text-danger" id="emailError"></small>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                            <small class="text-danger" id="phoneError"></small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="6"></textarea>
+                        <small class="text-danger" id="messageError"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-warning rounded-3 submit-btn">SUBMIT NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="validation.js"></script>
+
+</html>
